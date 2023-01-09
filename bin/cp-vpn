@@ -1,0 +1,3 @@
+#!/bin/bash
+
+sudo openconnect --protocol=gp cpvpn.calpoly.edu --user=schen184 --os=linux-64
