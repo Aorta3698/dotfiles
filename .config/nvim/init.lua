@@ -40,7 +40,7 @@ end
 function cpp_keymap()
   vim.keymap.set('n', '<F5>', cpp_compile)
   vim.keymap.set('n', '<F4>', cpp_run)
-  vim.keymap.set('n', 'gi',   init)
+  vim.keymap.set('n', 'gn',   init)
   vim.keymap.set('n', "ga",   initT)
 end
 
