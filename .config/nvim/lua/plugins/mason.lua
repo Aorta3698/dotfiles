@@ -3,6 +3,6 @@ return{
   enabled = true,
 
   config = function()
-    require('mason').setup{}
+    require('mason').setup()
   end
 }

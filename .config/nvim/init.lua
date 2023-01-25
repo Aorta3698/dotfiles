@@ -17,7 +17,8 @@ require("lazy").setup("plugins")
 
 function cpp_compile()
   vim.cmd[[w]]
-  vim.cmd[[!g++ -Wall -Wextra -Wconversion -static -DONLINE_JUDGE -O2 -std=c++20 "%:p"]]
+  -- vim.cmd[[!g++ -Wall -Wextra -Wconversion -static -DONLINE_JUDGE -O2 -std=c++20 "%:p"]]
+  vim.cmd[[term bash -c 'g++ -Wall -Wextra -Wconversion -static -DONLINE_JUDGE -O2 -std=c++20 "%:p"']]
 end
 
 function cpp_run()
