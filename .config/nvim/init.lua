@@ -45,6 +45,8 @@ function cpp_keymap()
   vim.keymap.set('n', "ga",   initT)
 end
 
+vim.keymap.set('n', 'gy', ':%y+<CR>')
+
 -- vim.keymap.set('n', '<F5>', codeforces_compile)
 vim.api.nvim_create_autocmd({"BufEnter", "BufWinEnter"}, {
   pattern = {"*.cpp"},
