@@ -2,3 +2,8 @@
 name = "cpp"
 auto-format = true
 formatter = { command = 'clang-format', args = ["-style=file:/var/home/anarchaworld/.config/cpp_format"]}
+
+[[language]]
+name = "c"
+auto-format = true
+formatter = { command = 'clang-format', args = ["-style=file:/var/home/anarchaworld/.config/cpp_format"]}
