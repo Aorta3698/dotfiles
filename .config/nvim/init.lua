@@ -7,13 +7,13 @@ if not vim.loop.fs_stat(lazypath) then
     "git",
     "clone",
     "--filter=blob:none",
-    "--single-branch",
     "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
     lazypath,
   })
 end
-vim.opt.runtimepath:prepend(lazypath)
-require("lazy").setup("plugins")
+vim.opt.rtp:prepend(lazypath)
+require("lazy").setup("plugins", opts)
 
 function cpp_compile()
   vim.cmd[[w]]
